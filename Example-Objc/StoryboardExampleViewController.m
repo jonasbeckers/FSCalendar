@@ -84,7 +84,7 @@
     [self.calendar selectDate:[self.dateFormatter1 dateFromString:@"2016/12/05"] scrollToDate:YES];
     
     self.calendar.accessibilityIdentifier = @"calendar";
-    
+	self.calendar.scope = .week;
 }
 
 - (void)dealloc

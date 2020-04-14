@@ -87,7 +87,10 @@ class InterfaceBuilderViewController: UIViewController, FSCalendarDataSource, FS
         
         // For UITest
         self.calendar.accessibilityIdentifier = "calendar"
-
+		calendar.scope = .week
+		calendar.rowHeight = 56
+		calendar.headerHeight = 0
+		calendar.weekdayHeight = 0
     }
     
     // MARK:- FSCalendarDataSource
